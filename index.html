@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <style>
+        :root {
+            --color : #d7aeff; 
+        }
+        .task::before {
+            background-color: var(--color);   
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="main__container">
+            <div class="left__side">
+                <div class="pro">
+                    <h2>
+                        GO PRO
+                    </h2>
+                    <p>
+                        Upgrade to stay
+                        connected with your 
+                        team !
+                    </p>
+                    <button>
+                        Upgrade Now
+                    </button>
+                </div>
+                <div class="user__info">
+                    <div class="user__img"><img src="media/avt-2.jpg" alt=""></div>
+                    <div class="user__name">
+                        <p>
+                            Seyed
+                        </p>
+                    </div>
+                    <div class="user__role">
+                        <p>
+                            jobless
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <ul class="tab__container">
+                        <li class="tab active__tab"><i class="fa-solid fa-house"></i>Dashboard</li>
+                        <li class="tab"><i class="fa-solid fa-copy"></i>Projects</li>
+                        <li class="tab"><i class="fa-solid fa-calendar"></i>Calander</li>
+                        <li class="tab"><i class="fa-solid fa-list-check"></i>My Tasks</li>
+                        <li class="tab"><i class="fa-solid fa-gear"></i>Setting</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right__side">
+                <div class="right__header">
+                    <div class="right__header__container">
+                        <div class="right__title">
+                            <h1>
+                                Dashboard
+                            </h1>
+                        </div>
+                        <div class="header__tools">
+                            <div class="search">
+                                <p>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </p>
+                            </div>
+                            <div class="notificaton">
+                                <p>
+                                    <i class="fa-solid fa-bell"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__main">
+                    <div class="top">
+                        <div class="activity">
+                            <div class="active__header">
+                                <h2>
+                                    activity
+                                </h2>
+                                <div class="selector">
+                                    <p>
+                                        Properties
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="active__chart"></div>
+                        </div>
+                        <div class="deck">
+                            <div class="deck__header">
+                                <h2>
+                                    Deck
+                                </h2>
+                                <p class="selector">
+                                    p <i class="fa-solid fa-angle-down"></i>
+                                </p>
+                            </div>
+                            <div class="deck__main">
+                                <div class="outter">
+                                    <div class="inner">
+                                        <p>
+                                            12:02
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Client Papapilaer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bott">
+                        <div class="today--task">
+                            <div class="today__header">
+                                <h2>
+                                    Today Tasks
+                                </h2>
+                                <p class="selector">
+                                    <i class="fa-solid fa-plus"></i>
+                                </p>
+                            </div>
+                            <div class="task__container">
+                                <div class="tasks">
+                                    <p class="task">task todo number 1 </p>
+                                    <p class="task">task todo number 1 </p>
+                                    <p class="task">task todo number 1 </p>
+                                    <p class="task">task todo number 1 </p>
+                                    <p class="task">task todo number 1 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <div class="project__header">
+                                <h2>
+                                    Projects
+                                </h2>
+                                <div class="project__selector selector">
+                                    High Proro <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="project__container">
+
+                                <div class="project">
+                                    <div class="logo"><p>P</p></div>
+                                    <div class="title">
+                                        Preoep
+                                    </div>
+                                    <div class="project__wrapper">
+                                        <p>
+                                            Progress
+                                        </p>
+                                        <div class="progress">
+                                            84%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project">
+                                    <div class="logo"><p>P</p></div>
+                                    <div class="title">
+                                        Preoep
+                                    </div>
+                                    <div class="project__wrapper">
+                                        <p>
+                                            Progress
+                                        </p>
+                                        <div class="progress">
+                                            84%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view project">
+                                    <div class="title">
+                                        View More Project
+                                    </div>
+                                    <div class="link">
+                                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>

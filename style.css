@@ -1,0 +1,421 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+html {
+  background-color: #c19771;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.5rem;
+  padding: 2rem 9rem;
+  width: 100%;
+}
+body .main {
+  background-color: #c19771;
+  height: 100%;
+}
+body .main .main__container {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  gap: 5rem;
+  background-color: #232b3f;
+  padding: 2rem 3rem;
+  height: 100%;
+  border-radius: 3rem;
+}
+body .main .main__container .left__side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+  color: white;
+}
+body .main .main__container .left__side .user__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+body .main .main__container .left__side .user__info .user__img {
+  padding: 1rem;
+  background-color: whitesmoke;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+body .main .main__container .left__side .user__info .user__img img {
+  width: 7rem;
+  border-radius: 50%;
+}
+body .main .main__container .left__side .user__info .user__name {
+  font-size: 2.2rem;
+}
+body .main .main__container .left__side .user__info .user__role {
+  font-size: 1.8rem;
+  color: gray;
+}
+body .main .main__container .left__side .tabs {
+  width: 100%;
+}
+body .main .main__container .left__side .tabs .tab__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: unset;
+  gap: 0.5rem;
+}
+body .main .main__container .left__side .tabs .tab__container .tab {
+  padding: 1.2rem 2rem;
+  width: 100%;
+  color: gray;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+}
+body .main .main__container .left__side .tabs .tab__container .tab i {
+  margin-right: 0.5rem;
+  width: 3rem;
+}
+body .main .main__container .left__side .tabs .tab__container .active__tab {
+  color: white;
+  font-size: 1.8rem;
+  background-color: rgba(145, 145, 145, 0.2509803922);
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__header {
+  margin-bottom: 2rem;
+  color: white;
+}
+body .main .main__container .right__side .right__header .right__header__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .main__container .right__side .right__header .right__header__container .header__tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+body .main .main__container .right__side .right__header .right__header__container .header__tools div {
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.3098039216);
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__main {
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: auto 1fr;
+}
+body .main .main__container .right__side .right__main .top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+body .main .main__container .right__side .right__main .top .activity {
+  padding: 2rem;
+  background-color: #f7e1d8;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+body .main .main__container .right__side .right__main .top .activity::after, body .main .main__container .right__side .right__main .top .activity::before {
+  content: "";
+  display: table;
+  clear: both;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1rem solid #f0d5cb;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+body .main .main__container .right__side .right__main .top .activity::after {
+  left: -5rem;
+  top: -5rem;
+}
+body .main .main__container .right__side .right__main .top .activity::before {
+  top: -5rem;
+}
+body .main .main__container .right__side .right__main .top .activity .active__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+body .main .main__container .right__side .right__main .top .activity .active__header h2 {
+  font-size: 3rem;
+}
+body .main .main__container .right__side .right__main .top .activity .active__header .selector {
+  padding: 1rem;
+  background-color: rgba(157, 157, 157, 0.528);
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__main .top .deck {
+  padding: 2rem;
+  background-color: #eebc58;
+  border-radius: 2rem;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__header h2 {
+  font-size: 3rem;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__header .selector {
+  padding: 1rem;
+  background-color: rgba(157, 157, 157, 0.528);
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__main .outter {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__main .outter .inner {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+body .main .main__container .right__side .right__main .top .deck .deck__main p {
+  font-size: 2rem;
+}
+body .main .main__container .right__side .right__main .bott {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  gap: 1rem;
+}
+body .main .main__container .right__side .right__main .bott .today--task {
+  padding: 2rem;
+  background-color: #d7aeff;
+  border-radius: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .today--task .today__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main .main__container .right__side .right__main .bott .today--task .today__header h2 {
+  font-size: 3rem;
+}
+body .main .main__container .right__side .right__main .bott .today--task .today__header .selector {
+  padding: 1rem;
+  background-color: rgba(157, 157, 157, 0.528);
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__main .bott .today--task .task__container .tasks .task {
+  padding: 0.4rem 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  cursor: pointer;
+}
+body .main .main__container .right__side .right__main .bott .today--task .task__container .tasks .task::before {
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  display: table;
+  border: 0.2rem solid black;
+  margin-right: 2rem;
+  transition: all 0.3s ease-in;
+}
+body .main .main__container .right__side .right__main .bott .projects {
+  padding: 2rem;
+  background-color: #f2ede5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__header h2 {
+  font-size: 3rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__header .selector {
+  padding: 1rem;
+  background-color: rgba(157, 157, 157, 0.528);
+  border-radius: 1rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: unset;
+  gap: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project {
+  padding: 1.5rem 4rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .logo {
+  padding: 0.5rem;
+  border-radius: 0.9rem;
+  background-color: orangered;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -2.5rem;
+  left: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .logo p {
+  padding: 0.5rem;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .project__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: unset;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .project__wrapper p {
+  font-size: 1.5rem;
+  color: #d7d7d7;
+}
+body .main .main__container .right__side .right__main .bott .projects .project__container .project .project__wrapper .progress {
+  font-size: 4rem;
+}
+
+.selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem !important;
+  font-size: 1.8rem;
+}
+
+.activeTask {
+  text-decoration: line-through;
+}
+.activeTask::before {
+  background-color: rgb(0, 207, 255) !important;
+  border-color: white !important;
+  border-radius: 0.5rem;
+}
+
+.pro {
+  padding: 1.5rem;
+  position: absolute;
+  bottom: -3.5rem;
+  left: -10rem;
+  background: linear-gradient(90deg, rgb(128, 98, 54) 0%, rgb(169, 170, 134) 100%);
+  z-index: 1;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+}
+.pro h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+.pro p {
+  color: #d7d7d7;
+  font-size: 1.8rem;
+}
+.pro button {
+  margin-top: 2rem;
+  background-color: #eebc5b;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.view {
+  width: 20rem;
+  background-color: #eebc58 !important;
+}
+.view .link {
+  padding: 1rem;
+  font-size: 3rem;
+  background-color: #533ba5;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.view .link i {
+  color: #eebc58;
+}/*# sourceMappingURL=style.css.map */
